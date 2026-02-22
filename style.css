@@ -98,17 +98,8 @@ flex: 0 0 10%;
 }
 
 /* General */
-.decorative_stripe {
-    padding-left: 20px;
-    background-image: linear-gradient(to bottom, var(--stripe_color) 60%, rgba(255,255,255,0) 0%);
-    background-size: 3px 30px;
-    background-repeat: repeat-y;
-}
-.stripe {
-    font-weight: bold;
-    font-size: 25px;
-    flex-shrink: 0;
-    width: 30px;
+.title {
+    margin-top: 70px;
 }
 .button {
     background-color: var(--widget_color);
