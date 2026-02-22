@@ -13,13 +13,13 @@
 <html>
 <body style="color: white;">
     <div>
-    <ul class="navigation_bar_ul">
-        <li class="navigation_bar_li"><img src="https://github.com/simon10247/wein-formeln/blob/main/faviconWeinFormeln.png?raw=true" alt="A wine bottle with a math formular" style="width: 40px; padding-top: 10px;"></li>
-        <li class="navigation_bar_li" style="font-weight: bold; font-size: 22px; padding-top: 5px;"><a href="" style="pointer-events: none;">Wein-Formeln.de</a></li>
-        <li class="navigation_bar_li"><a href="">🏠︎ Home</a></li>
-        <li class="navigation_bar_li"><a href=""><span style="font-size: 25px;">𝔁</span> Formeln</a></li>
-        <li class="navigation_bar_li"><a href="">✉ Kontakte</a></li>
-    </ul>
+        <ul class="navigation_bar_ul">
+            <li class="navigation_bar_li"><img src="https://github.com/simon10247/wein-formeln/blob/main/faviconWeinFormeln.png?raw=true" alt="A wine bottle with a math formular" style="width: 40px; padding-top: 10px;"></li>
+            <li class="navigation_bar_li" style="font-weight: bold; font-size: 22px; padding-top: 5px;"><a href="" style="pointer-events: none;">Wein-Formeln.de</a></li>
+            <li class="navigation_bar_li"><a href="">🏠︎ Home</a></li>
+            <li class="navigation_bar_li"><a href=""><span style="font-size: 25px;">𝔁</span> Formeln</a></li>
+            <li class="navigation_bar_li"><a href="">✉ Kontakte</a></li>
+        </ul>
     </div>
 
     <div class="left">
@@ -30,23 +30,23 @@
             <h1 style="margin-top: 70px;">Natürlicher Alkohol</h1>
         </div>
 
-        <div class="decorative_stripe" style="--stripe_color: aqua;"> <!-- Description -->
+        <div class="card_view" style="--stripe_color: aqua;"> <!-- Description -->
             <h3 class="description">Der natürlicher Alkohol, ist dieser, der sich aus Öchsle und Extrakt des Mostes berechnen lässt.<br>Die Öchsle sind der Zucker, der zu Alkohol vergoren wird und von diesem muss ein teil des zuckerfreien Extrakts abgezogen werden.</h3>
         </div>
 
-        <div class="decorative_stripe" style="--stripe_color: red;"> <!-- Formula -->
+        <div class="card_view" style="--stripe_color: red;"> <!-- Formula -->
             <h2>• Formel:</h1>
             <p class="formula">Oe° * 1,25 - E * 0,5 = nA</p>
             <pre><br>Oe° = <span class="keyword">Öchsle</span> in Oe°<br>E   = <span class="keyword">Extrakt</span> in g/l<br>nA  = <span class="keyword">natürlicher Alkohol</span><sup title="Für %vol: Geteilt durch 7,89 rechnen." class="info">ⓘ</sup> in g/l</pre>
         </div>
 
-        <div class="decorative_stripe" style="--stripe_color: green;"> <!-- Calculator -->
+        <div class="card_view" style="--stripe_color: green;"> <!-- Calculator -->
             <h2>• Rechner:</h1>
             <p><input class= "input" type="text" name="oechsle"> °Oe * 1,25 - <input class= "input" type="text" name="extract"> g/l * 0,5 = <input class= "input" type="text" name="alkohol" disabled> g/l</p>
             <button class="button" onclick="calculateNaturalAlkohol()">Berechnen</button>
         </div>
 
-        <div class="decorative_stripe" style="--stripe_color: blue;"> <!-- Example Task -->
+        <div class="card_view" style="--stripe_color: blue;"> <!-- Example Task -->
             <h2>• Beispiel Aufgabe:</h1>
             <p class="example_task">Du untersuchst deinen Riesling Most, dieser hat 82° Öchsle und eine Extrakt von 21 g/l. Du möchtest eine Alkohol von mindestens 12,5 %vol. haben.<br>Wie hoch ist der natürliche Alkohol in g/l und musst du deinen Most noch anreichern?</p>
             <button class="button" onclick="document.getElementsByClassName('hidden_awnser')[0].innerHTML = 'Dein Riesling Most hat einen natürlichen Alkohol von <b>92 g/l</b>, dass sind 11,66 %vol. und <b>muss somit noch angereichert werden</b>, um auf mindestens 12,5 %vol. zu kommen.'">Lösung Anzeigen</button>
