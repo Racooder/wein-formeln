@@ -30,7 +30,7 @@
             <h1 style="margin-top: 70px;">Natürlicher Alkohol</h1>
         </div>
 
-        <div class="card_view" style="--stripe_color: aqua;"> <!-- Description -->
+        <div class="card_view" style="--stripe_color: yellow;"> <!-- Description -->
             <h3 class="description">Der natürlicher Alkohol, ist dieser, der sich aus Öchsle und Extrakt des Mostes berechnen lässt.<br>Die Öchsle sind der Zucker, der zu Alkohol vergoren wird und von diesem muss ein teil des zuckerfreien Extrakts abgezogen werden.</h3>
         </div>
 
@@ -40,13 +40,13 @@
             <pre><br>Oe° = <span class="keyword">Öchsle</span> in Oe°<br>E   = <span class="keyword">Extrakt</span> in g/l<br>nA  = <span class="keyword">natürlicher Alkohol</span><sup title="Für %vol: Geteilt durch 7,89 rechnen." class="info">ⓘ</sup> in g/l</pre>
         </div>
 
-        <div class="card_view" style="--stripe_color: green;"> <!-- Calculator -->
+        <div class="card_view" style="--stripe_color: lime;"> <!-- Calculator -->
             <h2>• Rechner:</h1>
             <p><input class= "input" type="text" name="oechsle"> °Oe * 1,25 - <input class= "input" type="text" name="extract"> g/l * 0,5 = <input class= "input" type="text" name="alkohol" disabled> g/l</p>
             <button class="button" onclick="calculateNaturalAlkohol()">Berechnen</button>
         </div>
 
-        <div class="card_view" style="--stripe_color: blue;"> <!-- Example Task -->
+        <div class="card_view" style="--stripe_color: dodgerblue;"> <!-- Example Task -->
             <h2>• Beispiel Aufgabe:</h1>
             <p class="example_task">Du untersuchst deinen Riesling Most, dieser hat 82° Öchsle und eine Extrakt von 21 g/l. Du möchtest eine Alkohol von mindestens 12,5 %vol. haben.<br>Wie hoch ist der natürliche Alkohol in g/l und musst du deinen Most noch anreichern?</p>
             <button class="button" onclick="document.getElementsByClassName('hidden_awnser')[0].innerHTML = 'Dein Riesling Most hat einen natürlichen Alkohol von <b>92 g/l</b>, dass sind 11,66 %vol. und <b>muss somit noch angereichert werden</b>, um auf mindestens 12,5 %vol. zu kommen.'">Lösung Anzeigen</button>
