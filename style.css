@@ -1,9 +1,9 @@
 :root {
-    --main_background_color: #1e113f;           /* Main Background */
-    --secondary_background_color: #2d195e;      /* Side Background (Left and Right) */
-    --widget_color: #170d30;                    /* Navigation Bar and Button */
-    --widget_hover_color: #06030c;              /* Hover for Navigation Bar and Buttons */
-    --widget_color_2: #381f77;                  /* Input */
+    --main_background_color: #1E113F;           /* Main Background */
+    --secondary_background_color: #2B1859;      /* Side Background (Left and Right) */
+    --widget_color: #180E33;                    /* Navigation Bar and Button */
+    --widget_hover_color: #06030C;              /* Hover for Navigation Bar and Buttons */
+    --widget_color_2: #3C2180;                  /* Input */
 }
 
 body {
