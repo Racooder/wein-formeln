@@ -1,9 +1,9 @@
 :root {
     --main_background_color: #1E113F;           /* Main Background */
     --secondary_background_color: #2B1859;      /* Side Background (Left and Right) */
-    --widget_color: #180E33;                    /* Navigation Bar */
+    --widget_color: #180E33;                    /* Navigation Bar and Button*/
     --widget_hover_color: #06030C;              /* Hover for Navigation Bar and Buttons */
-    --widget_color_2: #3C2180;                  /* Input and Button */
+    --widget_color_2: #3C2180;                  /* Input */
     --card_color: #0f0920;                      /* Card Background */
 }
 
@@ -104,7 +104,7 @@ flex: 0 0 10%;
     width: 30px;
 }
 .button {
-    background-color: var(--widget_color_2);
+    background-color: var(--widget_color);
     border: none;
     color: white;
     padding: 15px 32px;
