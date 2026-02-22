@@ -2,8 +2,8 @@
     --main_background_color: #1E113F;           /* Main Background */
     --secondary_background_color: #2B1859;      /* Side Background (Left and Right) */
     --widget_color: #180E33;                    /* Navigation Bar and Button*/
-    --widget_hover_color: #06030C;              /* Hover for Navigation Bar and Buttons */
-    --widget_color_2: #3C2180;                  /* Input */
+    --widget_hover_color: #06030C;              /* Navigation Bar Hover */
+    --widget_color_2: #3C2180;                  /* Input and Button Hover*/
     --card_color: #0f0920;                      /* Card Background */
 }
 
@@ -63,12 +63,13 @@ flex: 0 0 10%;
 .card_view {
     background-color: var(--card_color);
     border-left: var(--stripe_color) solid 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     border-radius: 10px;
     width: 75%;
     margin-left: auto;
@@ -124,7 +125,7 @@ flex: 0 0 10%;
     transition: 0.7s;
 }
 .button:hover {
-    background-color: var(--widget_hover_color);
+    background-color: var(--widget_color_2);
 }
 .input {
     background-color: var(--widget_color_2);
