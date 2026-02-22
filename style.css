@@ -1,5 +1,13 @@
+:root {
+    --main_background_color: #1e113f;           /* Main Background */
+    --secondary_background_color: #2d195e;      /* Side Background (Left and Right) */
+    --widget_color: #170d30;                    /* Navigation Bar and Button */
+    --widget_hover_color: #06030c;              /* Hover for Navigation Bar and Buttons */
+    --widget_color_2: #381f77;                  /* Input */
+}
+
 body {
-    background-color: #1e113f;
+    background-color: var(--main_background_color);
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -20,7 +28,7 @@ body {
     padding: 0;
     overflow: hidden;
     border-radius: 10px;
-    background-color: #170d30;
+    background-color: var(--widget_color);
 }
 .navigation_bar_li {
     float: left;
@@ -34,7 +42,7 @@ body {
     height: 100%;
 }
 .navigation_bar_li a:hover {
-    background-color: #06030c;
+    background-color: var(--widget_hover_color);
     transition: 0.7s;
 }
 
@@ -47,7 +55,7 @@ padding: 20px;
 flex: 0 0 80%;
 }
 .right, .left {
-background-color: #2d195e;
+background-color: var(--secondary_background_color);
 padding: 20px;
 flex: 0 0 10%;
 }
@@ -84,7 +92,7 @@ flex: 0 0 10%;
     width: 30px;
 }
 .button {
-    background-color: #170d30;
+    background-color: var(--widget_color);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -98,10 +106,10 @@ flex: 0 0 10%;
     transition: 0.7s;
 }
 .button:hover {
-    background-color: #06030c;
+    background-color: var(--widget_hover_color);
 }
 .input {
-    background-color: #381f77;
+    background-color: var(--widget_color_2);
     border: none;
     color: white;
     width: 30px;
