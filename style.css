@@ -91,6 +91,9 @@ flex: 0 0 10%;
         padding: 10px 8px;
         font-size: 16px;
     }*/ /*Makes NavBar on phone smaller*/
+    .card_view {
+        width: 100%;
+    }
 }
 
 /* General */
