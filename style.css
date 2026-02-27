@@ -98,6 +98,12 @@ flex: 0 0 10%;
     .title {
         margin-top: 100px;
     }
+    .horizontal_scroll {
+        overflow-x: auto;
+        white-space: pre;
+        word-wrap: normal;
+        max-width: 75%;
+    }
 }
 
 /* General */
