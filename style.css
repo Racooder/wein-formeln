@@ -102,7 +102,8 @@ flex: 0 0 10%;
         overflow: hidden;
     }
     .title {
-        margin-top: 100px;
+        margin-top: 150px;
+        font-size: 30px;
     }
     .horizontal_scroll {
         display: block;
