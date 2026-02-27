@@ -35,19 +35,19 @@
         </div>
 
         <div class="card_view" style="--stripe_color: red;"> <!-- Formula -->
-            <h2>• Formel:</h1>
+            <h2>• Formel:</h2>
             <p class="formula">Oe° * 1,25 - E * 0,5 = nA</p>
             <pre class="horizontal_scroll"><br>Oe° = <span class="keyword">Öchsle</span> in Oe°<br>E   = <span class="keyword">Extrakt</span> in g/l<br>nA  = <span class="keyword">natürlicher Alkohol</span><sup title="Für %vol: Geteilt durch 7,89 rechnen." class="info">ⓘ</sup> in g/l</pre>
         </div>
 
         <div class="card_view" style="--stripe_color: lime;"> <!-- Calculator -->
-            <h2>• Rechner:</h1>
+            <h2>• Rechner:</h2>
             <p><input class= "input" type="text" name="oechsle"> °Oe * 1,25 - <input class= "input" type="text" name="extract"> g/l * 0,5 = <input class= "input" type="text" name="alkohol" disabled> g/l</p>
             <button class="button" onclick="calculateNaturalAlkohol()">Berechnen</button>
         </div>
 
         <div class="card_view" style="--stripe_color: dodgerblue;"> <!-- Example Task -->
-            <h2>• Beispiel Aufgabe:</h1>
+            <h2>• Beispiel Aufgabe:</h2>
             <p class="example_task">Du untersuchst deinen Riesling Most, dieser hat 82° Öchsle und eine Extrakt von 21 g/l. Du möchtest eine Alkohol von mindestens 12,5 %vol. haben.<br>Wie hoch ist der natürliche Alkohol in g/l und musst du deinen Most noch anreichern?</p>
             <button class="button" onclick="document.getElementsByClassName('hidden_awnser')[0].innerHTML = 'Dein Riesling Most hat einen natürlichen Alkohol von <b>92 g/l</b>, dass sind 11,66 %vol. und <b>muss somit noch angereichert werden</b>, um auf mindestens 12,5 %vol. zu kommen.'">Lösung Anzeigen</button>
             <button class="button" onclick="document.getElementsByClassName('hidden_formula')[0].innerHTML = '82° Oe * 1,25 - 21 g/l * 0,5  = <b>92 g/l</b><br>92 g/l / 7,89                 = 11,66 %vol.<br>11,66 %vol. < 12,5 %vol.      = <b>Muss angereichert werden</b>'">Lösungsweg Anzeigen</button>
