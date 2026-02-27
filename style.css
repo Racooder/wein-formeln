@@ -103,8 +103,8 @@ flex: 0 0 10%;
         overflow-x: auto;
         white-space: pre;
         word-wrap: normal;
-        max-width: 100%;
-        width: 100%;
+        max-width: 90%;
+        width: 90%;
     }
 }
 
