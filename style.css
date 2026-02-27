@@ -80,7 +80,7 @@ flex: 0 0 10%;
 @media screen and (max-width: 800px) {
     body {
         overflow-x: hidden;
-        font-size: 15px;
+        font-size: 10px;
     }
     .main {
         flex: 0 0 100%;
