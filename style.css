@@ -78,9 +78,13 @@ flex: 0 0 10%;
 
 /* Layout change for Phone*/
 @media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
     .main {
         flex: 0 0 100%;
         padding: 15px;
+        min-width: 0;
         }
     .left, .right {
         display: none;
@@ -94,6 +98,7 @@ flex: 0 0 10%;
     }*/ /*Makes NavBar on phone smaller*/
     .card_view {
         width: 100%;
+        overflow: hidden;
     }
     .title {
         margin-top: 100px;
@@ -102,9 +107,9 @@ flex: 0 0 10%;
         display: block;
         overflow-x: auto;
         white-space: pre;
-        word-wrap: normal;
-        max-width: 90%;
-        width: 90%;
+        overflow-wrap: normal;
+        max-width: 100%;
+        width: 100%;
     }
 }
 
