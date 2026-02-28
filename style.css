@@ -149,6 +149,7 @@ flex: 0 0 10%;
         }
     .navigation_bar_ul {
         position: absolute;
+        width: 95%;
     }
     .navigation_bar_break {
         display: block;
