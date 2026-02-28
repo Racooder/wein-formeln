@@ -31,6 +31,10 @@ body {
     border-radius: 10px;
     background-color: var(--widget_color);
 }
+.navigation_bar_break {
+    display: none;
+    width: 100%;
+}
 .navigation_bar_li {
     float: left;
 }
@@ -145,6 +149,9 @@ flex: 0 0 10%;
         }
     .navigation_bar_ul {
         position: absolute;
+    }
+    .navigation_bar_break {
+        display: block;
     }
     /*.navigation_bar_li a {
         padding: 10px 8px;
