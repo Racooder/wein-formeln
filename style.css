@@ -32,6 +32,7 @@ body {
     background-color: var(--widget_color);
     left: 50%;
     transform: translate(-50%);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 .navigation_bar_break {
     display: none;
