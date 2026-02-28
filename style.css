@@ -46,6 +46,11 @@ body {
     background-color: var(--widget_hover_color);
     transition: 0.7s;
 }
+.navigation_bar_icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
 
 /*  Layout in General */
 * {
