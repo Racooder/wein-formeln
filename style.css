@@ -143,7 +143,8 @@ flex: 0 0 10%;
     }
     .title {
         margin-top: 200px;
-        font-size: 20px;
+        font-size: 30px;
+        text-align: center;
     }
     .horizontal_scroll {
         display: block;
