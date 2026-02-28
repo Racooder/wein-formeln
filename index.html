@@ -8,6 +8,7 @@
     <meta author="simon102">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <html>
@@ -50,9 +51,9 @@
             <h2>• Beispiel Aufgabe:</h2>
             <p class="example_task">Du untersuchst deinen Riesling Most, dieser hat 82° Öchsle und eine Extrakt von 21 g/l. Du möchtest eine Alkohol von mindestens 12,5 %vol. haben.<br>Wie hoch ist der natürliche Alkohol in g/l und musst du deinen Most noch anreichern?</p>
             <button class="button" onclick="document.getElementsByClassName('hidden_awnser')[0].innerHTML = 'Dein Riesling Most hat einen natürlichen Alkohol von <b>92 g/l</b>, dass sind 11,66 %vol. und <b>muss somit noch angereichert werden</b>, um auf mindestens 12,5 %vol. zu kommen.'">Lösung Anzeigen</button>
-            <button class="button" onclick="document.getElementsByClassName('hidden_formula')[0].innerHTML = '82° Oe * 1,25 - 21 g/l * 0,5  = <b>92 g/l</b><br>92 g/l / 7,89                 = 11,66 %vol.<br>11,66 %vol. < 12,5 %vol.      = <b>Muss angereichert werden</b>'">Lösungsweg Anzeigen</button>
+            <button class="button" onclick="show_formula()">Lösungsweg Anzeigen</button>
             <p class="hidden_awnser"></p>
-            <pre class="hidden_formula horizontal_scroll" style="padding-bottom: 10px;"></pre>
+            <pre class="hidden_formula horizontal_scroll" style="padding-bottom: 10px; display: none;">82° Oe * 1,25 - 21 g/l * 0,5  = <b>92 g/l</b><br>92 g/l / 7,89                 = 11,66 %vol.<br>11,66 %vol. < 12,5 %vol.      = <b>Muss angereichert werden</b></pre>
         </div>
 
     </div>
