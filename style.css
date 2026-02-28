@@ -76,45 +76,6 @@ flex: 0 0 10%;
     margin-right: auto;
 }
 
-/* Layout change for Phone*/
-@media screen and (max-width: 800px) {
-    body {
-        overflow-x: hidden;
-        font-size: 15px;
-    }
-    .main {
-        flex: 0 0 100%;
-        padding: 15px;
-        min-width: 0;
-        }
-    .left, .right {
-        display: none;
-        }
-    .navigation_bar_ul {
-        position: absolute;
-    }
-    /*.navigation_bar_li a {
-        padding: 10px 8px;
-        font-size: 16px;
-    }*/ /*Makes NavBar on phone smaller*/
-    .card_view {
-        width: 100%;
-        overflow: hidden;
-    }
-    .title {
-        margin-top: 200px;
-        font-size: 20px;
-    }
-    .horizontal_scroll {
-        display: block;
-        overflow-x: auto;
-        white-space: pre;
-        overflow-wrap: normal;
-        max-width: 100%;
-        width: 100%;
-    }
-}
-
 /* General */
 .title {
     margin-top: 70px;
@@ -153,4 +114,43 @@ flex: 0 0 10%;
 .info {
     color: aqua;
     font-size: small;
+}
+
+/* Layout change for Phone*/
+@media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+        font-size: 15px;
+    }
+    .main {
+        flex: 0 0 100%;
+        padding: 15px;
+        min-width: 0;
+        }
+    .left, .right {
+        display: none;
+        }
+    .navigation_bar_ul {
+        position: absolute;
+    }
+    /*.navigation_bar_li a {
+        padding: 10px 8px;
+        font-size: 16px;
+    }*/ /*Makes NavBar on phone smaller*/
+    .card_view {
+        width: 100%;
+        overflow: hidden;
+    }
+    .title {
+        margin-top: 200px;
+        font-size: 20px;
+    }
+    .horizontal_scroll {
+        display: block;
+        overflow-x: auto;
+        white-space: pre;
+        overflow-wrap: normal;
+        max-width: 100%;
+        width: 100%;
+    }
 }
