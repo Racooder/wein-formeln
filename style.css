@@ -103,6 +103,7 @@ flex: 0 0 10%;
 }
 .input {
     background-color: var(--widget_color_2);
+    border-radius: 5px;
     border: none;
     color: white;
     width: 30px;
