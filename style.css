@@ -121,9 +121,11 @@ flex: 0 0 10%;
     border-radius: 5px;
     border: none;
     color: white;
-    width: 30px;
+    display: inline-block;
+    min-width: 30px;
     font-size: 20px;
     text-align: center;
+    padding: 0px 5px;
 }
 .keywords {
     font-weight: bold;
@@ -186,7 +188,7 @@ flex: 0 0 10%;
     }
     .input {
         font-size: 15px;
-        width: 25px;
+        min-width: 25px;
     }
     .info {
         position: relative;
