@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Calculate the natural alkohol
 function calculateNaturalAlkohol() {
-    document.querySelector('input[name="natural_alkohol"]').value = Number(document.querySelector('input[name="oechsle"]').value) * 1.25 - Number(document.querySelector('input[name="extract"]').value) * 0.5;
+    document.getElementById('natural_alkohol').innerText = Number(document.getElementById('oechsle').innerText) * 1.25 - Number(document.getElementById('extract').innerText) * 0.5;
 }
