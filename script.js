@@ -5,6 +5,13 @@ function show_formula() {
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    document.head.insertAdjacentHTML('beforeend', `
+        <link rel="icon" type="image/x-icon" href="https://github.com/simon10247/wein-formeln/blob/main/faviconWeinFormeln.png?raw=true">
+        <meta author="simon102">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta charset="UTF-8">
+        `)
+
     const box = document.getElementById("navigation_bar_injection");
     box.innerHTML = `
         <ul class="navigation_bar_ul">
