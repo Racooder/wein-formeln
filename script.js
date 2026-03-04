@@ -11,7 +11,31 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
+function commaToDot(text) {
+    text = String(text);
+    text = text.replace(",", ".");
+    text = Number(text);
+    return text;
+}
+
 // Calculate the natural alkohol
 function calculateNaturalAlkohol() {
-    document.getElementById('natural_alkohol').innerText = Number(document.getElementById('oechsle').innerText) * 1.25 - Number(document.getElementById('extract').innerText) * 0.5;
+    
+    let oechsle = document.getElementById('oechsle').innerText;
+    let extract = document.getElementById('extract').innerText;
+    let naturalAlkohol;
+
+    oechsle = commaToDot(oechsle);
+    extract = commaToDot(extract);
+
+    naturalAlkohol = oechsle * 1.25 - extract * 0.5;
+
+    naturalAlkohol = String(naturalAlkohol).replace(".", ",");
+
+    document.getElementById('natural_alkohol').innerText = naturalAlkohol;
+
+    // console.log("Oe:", oechsle);
+    // console.log("E:", extract);
+    // console.log("nA:", naturalAlkohol);
+
 }
