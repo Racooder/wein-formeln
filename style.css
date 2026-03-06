@@ -26,7 +26,7 @@ body {
     justify-content: left;
     list-style-type: none;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 0;
     overflow: hidden;
     border-radius: 10px;
@@ -94,7 +94,7 @@ flex: 0 0 10%;
 
 /* General */
 .title {
-    margin-top: 70px;
+    margin-top: 80px;
     text-transform: uppercase;
     font-size: 50px;
     font-weight: 900;
