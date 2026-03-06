@@ -148,6 +148,7 @@ flex: 0 0 10%;
     font-family: "Libertinus Mono", monospace;
     font-size: 18px;
     font-style: normal;
+    line-height: 1.4;
 }
 
 /* Layout change for Phone*/
