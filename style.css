@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Space+Mono&display=swap');
+
 :root {
     --main_background_color: #1E113F;           /* Main Background */
     --secondary_background_color: #2B1859;      /* Side Background (Left and Right) */
@@ -141,6 +143,11 @@ flex: 0 0 10%;
     position: relative;
     top: -10px;
     text-decoration: none;
+}
+.monospace {
+    font-family: "Libertinus Mono", monospace;
+    font-size: 18px;
+    font-style: normal;
 }
 
 /* Layout change for Phone*/

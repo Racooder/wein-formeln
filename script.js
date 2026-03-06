@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `)
 
     const box = document.getElementById("navigation_bar_injection");
+    // Inject the navigation bar into .html
     box.innerHTML = `
         <ul class="navigation_bar_ul">
             <li class="navigation_bar_li"><img src="https://github.com/simon10247/wein-formeln/blob/main/faviconWeinFormeln.png?raw=true" alt="A wine bottle with a math formular" style="width: 40px; padding-top: 10px;"></li>
