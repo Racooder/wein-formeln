@@ -30,7 +30,6 @@ body {
     flex-wrap: wrap;
     margin-top: 15px;
     padding: 0;
-    overflow: hidden;
     border-radius: 10px;
     background-color: var(--widget_color);
     left: 50%;
@@ -64,6 +63,9 @@ body {
     text-decoration: none;
     height: 60px;
 }
+.navigation_bar_right a:last-child {
+    border-radius: 0 10px 10px 0;
+}
 .navigation_bar_ul a:hover {
     background-color: var(--widget_hover_color);
     transition: 0.7s;
@@ -74,6 +76,31 @@ body {
     margin-right: 5px;
     margin-left: 5px;
 }
+
+/* ---------------------------------------------------------------- (Remove, just for testing) */
+
+.navigation_bar_dropdown_content {
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    background-color: var(--secondary_background_color);
+    min-width: 160px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+.navigation_bar_dropdown_content li a {
+    height: 50px;
+    text-align: left;
+    justify-content: flex-start;
+}
+.navigation_bar_dropdown:hover .navigation_bar_dropdown_content {
+    display: block;
+}
+
+/* ---------------------------------------------------------------- (Remove, just for testing) */
 
 /*  Layout in General */
 * {

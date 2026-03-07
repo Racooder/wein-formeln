@@ -20,7 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
             <li class="navigation_bar_left" style="font-weight: bold; font-size: 22px;"><a href="" style="pointer-events: none;">Wein-Formeln.de</a></li>
             <li class="navigation_bar_break"></li>
             <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/home.png" alt="Home Icone">Home</a></li>
-            <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/math.png" alt="Calculation Icone">Formeln</a></li>
+            <li class="navigation_bar_left navigation_bar_dropdown">
+                <a href=""><img class="navigation_bar_icon" src="icons/math.png" alt="Calculation Icone">Formeln</a>
+                <ul class="navigation_bar_dropdown_content">
+                    <li><a href="">Natürlicher Alkohol</a></li>
+                    <li><a href="">Anreicherung</a></li>
+                    <li><a href="">[Drittes Thema hier]</a></li>
+                </ul>
+            </li>
             <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/mail.png" alt="Envelope Icone">Kontakte</a></li>
             <li class="navigation_bar_right"><a href=""><img class="navigation_bar_icon" src="icons/menu.png" alt="Menu Icone"></a></li>
         </ul>`;
