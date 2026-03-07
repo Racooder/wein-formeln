@@ -208,4 +208,7 @@ flex: 0 0 10%;
         position: relative;
         top: -6px;
     }
+    .monospace {
+        font-size: 13px;
+    }
 }
