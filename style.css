@@ -41,9 +41,6 @@ body {
     display: none;
     width: 100%;
 }
-.navigation_bar_left {
-    float: left;
-}
 .navigation_bar_left a {
     display: flex;
     align-items: center;
@@ -55,7 +52,7 @@ body {
     height: 60px;
 }
 .navigation_bar_right {
-    float: right;
+    margin-left: auto;
 }
 .navigation_bar_right a {
     display: flex;
@@ -75,6 +72,7 @@ body {
     width: 20px;
     vertical-align: middle;
     margin-right: 5px;
+    margin-left: 5px;
 }
 
 /*  Layout in General */

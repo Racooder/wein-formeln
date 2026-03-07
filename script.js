@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/home.png" alt="Home Icone">Home</a></li>
             <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/math.png" alt="Calculation Icone">Formeln</a></li>
             <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/mail.png" alt="Envelope Icone">Kontakte</a></li>
-            <li class="navigation_bar_right"><a href=""><img class="navigation_bar_icon" src="icons/math.png" alt="Calculation Icone"></a></li>
+            <li class="navigation_bar_right"><a href=""><img class="navigation_bar_icon" src="icons/menu.png" alt="Menu Icone"></a></li>
         </ul>`;
 
     document.querySelectorAll('.input_span').forEach((inputSpan) => {   // A kind of class to add attributes to the span
