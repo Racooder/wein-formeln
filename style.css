@@ -41,10 +41,10 @@ body {
     display: none;
     width: 100%;
 }
-.navigation_bar_li {
+.navigation_bar_left {
     float: left;
 }
-.navigation_bar_li a {
+.navigation_bar_left a {
     display: flex;
     align-items: center;
     text-align: center;
@@ -54,7 +54,20 @@ body {
     text-decoration: none;
     height: 60px;
 }
-.navigation_bar_li a:hover {
+.navigation_bar_right {
+    float: right;
+}
+.navigation_bar_right a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding: 0px 16px;
+    text-decoration: none;
+    height: 60px;
+}
+.navigation_bar_ul a:hover {
     background-color: var(--widget_hover_color);
     transition: 0.7s;
 }
@@ -175,7 +188,7 @@ flex: 0 0 10%;
     .navigation_bar_break {
         display: block;
     }
-    /*.navigation_bar_li a {
+    /*.navigation_bar_left a {
         padding: 10px 8px;
         font-size: 16px;
     }*/ /*Makes NavBar on phone smaller*/
