@@ -185,7 +185,8 @@ flex: 0 0 10%;
         overflow: hidden;
     }
     .title {
-        margin-top: 140px;
+        margin-top: 150px;
+        margin-bottom: -10px;
         padding-left: 0;
         font-size: 35px;
         text-align: center;
