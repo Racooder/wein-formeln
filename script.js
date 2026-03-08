@@ -5,6 +5,11 @@ function show_formula() {
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    let savedTheme = localStorage.getItem('selectedTheme');
+    if (savedTheme) {
+        setTheme(savedTheme);
+    }
+
     document.head.insertAdjacentHTML('beforeend', `
         <link rel="icon" type="image/x-icon" href="https://github.com/simon10247/wein-formeln/blob/main/faviconWeinFormeln.png?raw=true">
         <meta author="simon102">
@@ -46,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function setTheme(theme) {
     let root = document.documentElement;
+    localStorage.setItem('selectedTheme', theme);
 
     if (theme === "light") {
         root.style.setProperty('--main_background_color', '#ffffff');
