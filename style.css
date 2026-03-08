@@ -7,10 +7,11 @@
     --widget_hover_color: #06030C;              /* Navigation Bar Hover */
     --widget_color_2: #3C2180;                  /* Input and Button Hover*/
     --card_color: #0f0920;                      /* Card Background */
+    --text_color: #ffffff;                      /* Text Color */
 }
 
 body {
-    color: white;
+    color: var(--text_color);
     background-color: var(--main_background_color);
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
@@ -88,7 +89,7 @@ body {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     list-style-type: none;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 0px;
     border-radius: 10px 10px 10px 10px;
 }
 .navigation_bar_dropdown_content li a {

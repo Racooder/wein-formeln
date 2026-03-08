@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/mail.png" alt="Envelope Icone">Kontakte</a></li>
             <li class="navigation_bar_right navigation_bar_dropdown"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/menu.png" alt="Menu Icone"></a>
                 <ul class="navigation_bar_dropdown_content_right navigation_bar_dropdown_content">
-                    <li><a href="">Light Theme</a></li>
-                    <li><a href="">Dark Theme</a></li>
-                    <li><a href="">Purple Theme</a></li>
+                    <li><a href="javascript:void(0)" onclick="setTheme('light')">Light Theme</a></li>
+                    <li><a href="javascript:void(0)" onclick="setTheme('dark')">Dark Theme</a></li>
+                    <li><a href="javascript:void(0)" onclick="setTheme('purple')">Purple Theme</a></li>
                 </ul>
             </li>
         </ul>`;
@@ -43,6 +43,36 @@ document.addEventListener("DOMContentLoaded", () => {
         inputSpan.setAttribute('contenteditable', 'true');
     })
 })
+
+function setTheme(theme) {
+    let root = document.documentElement;
+
+    if (theme === "light") {
+        root.style.setProperty('--main_background_color', '#ffffff');
+        root.style.setProperty('--secondary_background_color', '#b6b6b6');
+        root.style.setProperty('--widget_color', '#413561');
+        root.style.setProperty('--widget_hover_color', '#2b2341');
+        root.style.setProperty('--widget_color_2', '#625091');
+        root.style.setProperty('--card_color', '#1c1729');
+        root.style.setProperty('--text_color', '#000000');
+    } else if (theme === "dark") {
+        root.style.setProperty('--main_background_color', '#292929');
+        root.style.setProperty('--secondary_background_color', '#494949');
+        root.style.setProperty('--widget_color', '#303030');
+        root.style.setProperty('--widget_hover_color', '#1b1b1b');
+        root.style.setProperty('--widget_color_2', '#858585');
+        root.style.setProperty('--card_color', '#494949');
+        root.style.setProperty('--text_color', '#ffffff');
+    } else if (theme === "purple") {
+        root.style.setProperty('--main_background_color', '#1E113F');
+        root.style.setProperty('--secondary_background_color', '#2B1859');
+        root.style.setProperty('--widget_color', '#180E33');
+        root.style.setProperty('--widget_hover_color', '#06030C');
+        root.style.setProperty('--widget_color_2', '#3C2180');
+        root.style.setProperty('--card_color', '#0f0920');
+        root.style.setProperty('--text_color', '#ffffff');
+    }
+}
 
 function commaToDot(text) {
     text = String(text);
