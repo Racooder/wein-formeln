@@ -7,6 +7,7 @@
     --widget_hover_color: #06030C;              /* Navigation Bar Hover */
     --widget_color_2: #3C2180;                  /* Input and Button Hover*/
     --card_color: #0f0920;                      /* Card Background */
+    --title_color: #ffffff;                     /* Title Color */
     --text_color: #ffffff;                      /* Text Color */
 }
 
@@ -46,7 +47,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: white;
+    color: var(--text_color);
     padding: 0px 16px;
     text-decoration: none;
     height: 60px;
@@ -59,7 +60,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: white;
+    color: var(--text_color);
     padding: 0px 16px;
     text-decoration: none;
     height: 60px;
@@ -84,7 +85,7 @@ body {
     overflow: hidden;
     display: none;
     position: absolute;
-    background-color: var(--secondary_background_color);
+    background-color: var(--card_color);
     min-width: 160px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     list-style-type: none;
@@ -142,7 +143,7 @@ flex: 0 0 10%;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-
+    color: var(--title_color);
     margin-top: 90px;
     text-transform: uppercase;
     font-size: 50px;

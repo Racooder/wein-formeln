@@ -54,13 +54,14 @@ function setTheme(theme) {
     localStorage.setItem('selectedTheme', theme);
 
     if (theme === "light") {
-        root.style.setProperty('--main_background_color', '#ffffff');
-        root.style.setProperty('--secondary_background_color', '#b6b6b6');
+        root.style.setProperty('--main_background_color', '#eeeeee');
+        root.style.setProperty('--secondary_background_color', '#ffffff');
         root.style.setProperty('--widget_color', '#413561');
         root.style.setProperty('--widget_hover_color', '#2b2341');
-        root.style.setProperty('--widget_color_2', '#625091');
-        root.style.setProperty('--card_color', '#1c1729');
-        root.style.setProperty('--text_color', '#000000');
+        root.style.setProperty('--widget_color_2', '#ab94e6');
+        root.style.setProperty('--card_color', '#604d92');
+        root.style.setProperty('--title_color', '#2b2341');
+        root.style.setProperty('--text_color', '#ffffff');
     } else if (theme === "dark") {
         root.style.setProperty('--main_background_color', '#292929');
         root.style.setProperty('--secondary_background_color', '#494949');
@@ -68,6 +69,7 @@ function setTheme(theme) {
         root.style.setProperty('--widget_hover_color', '#1b1b1b');
         root.style.setProperty('--widget_color_2', '#858585');
         root.style.setProperty('--card_color', '#494949');
+        root.style.setProperty('--title_color', '#ffffff');
         root.style.setProperty('--text_color', '#ffffff');
     } else if (theme === "purple") {
         root.style.setProperty('--main_background_color', '#1E113F');
@@ -76,6 +78,7 @@ function setTheme(theme) {
         root.style.setProperty('--widget_hover_color', '#06030C');
         root.style.setProperty('--widget_color_2', '#3C2180');
         root.style.setProperty('--card_color', '#0f0920');
+        root.style.setProperty('--title_color', '#0000ffffff00');
         root.style.setProperty('--text_color', '#ffffff');
     }
 }
