@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <li class="navigation_bar_left navigation_bar_dropdown">
                 <a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/math.png" alt="Calculation Icone">Formeln</a>
                 <ul class="navigation_bar_dropdown_content">
-                    <li><a href="">Natürlicher Alkohol</a></li>
-                    <li><a href="">Anreicherung</a></li>
-                    <li><a href="">[Drittes Thema hier]</a></li>
+                    <li><a href="">• Natürlicher Alkohol</a></li>
+                    <li><a href="">• Anreicherung</a></li>
+                    <li><a href="">• [Drittes Thema hier]</a></li>
                 </ul>
             </li>
             <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/mail.png" alt="Envelope Icone">Kontakte</a></li>
