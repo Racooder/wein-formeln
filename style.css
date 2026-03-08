@@ -63,7 +63,7 @@ body {
     text-decoration: none;
     height: 60px;
 }
-.navigation_bar_right a:last-child {
+.navigation_bar_right a {
     border-radius: 0 10px 10px 0;
 }
 .navigation_bar_ul a:hover {
@@ -98,6 +98,11 @@ body {
 }
 .navigation_bar_dropdown:hover .navigation_bar_dropdown_content {
     display: block;
+}
+
+.navigation_bar_dropdown_content_right {
+    right: 0;
+    left : auto;
 }
 
 /* ---------------------------------------------------------------- (Remove, just for testing) */
