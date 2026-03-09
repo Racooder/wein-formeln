@@ -1,15 +1,17 @@
 // Make the Lösungsweg box for vertical scroll on phone go away if the button hasn't been pressed yet
-function show_formula() {
-    document.getElementsByClassName("hidden_formula")[0].style.display = "block";
+function show_formula() { // Normal function (Called by HTML code)
+    document.getElementsByClassName("hidden_formula")[0].style.display = "block"; //Findes an element with this class and applys the style change
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => { // This code i executed, when the html page is finished loading
 
-    let savedTheme = localStorage.getItem('selectedTheme');
-    if (savedTheme) {
-        setTheme(savedTheme);
+    // THEME STORAGE
+    let savedTheme = localStorage.getItem('selectedTheme'); // Look into browser storage and saves "selectedTheme" into var
+    if (savedTheme) { // If a saved theme exists
+        setTheme(savedTheme); // Calles the setTheme function with the found/saved theme
     }
 
+    // HEAD INJECTION
     document.head.insertAdjacentHTML('beforeend', `
         <link rel="icon" type="image/x-icon" href="https://github.com/simon10247/wein-formeln/blob/main/faviconWeinFormeln.png?raw=true">
         <meta author="simon102">
@@ -17,8 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <meta charset="UTF-8">
         `)
 
-    const box = document.getElementById("navigation_bar_injection");
-    // Inject the navigation bar into .html
+    // NAVIGATION INJECTION
+    let box = document.getElementById("navigation_bar_injection"); // Saves the div with the id in a var
+    // Tells the div to contail this code
     box.innerHTML = `
         <ul class="navigation_bar_ul">
             <li class="navigation_bar_left"><img src="https://github.com/simon10247/wein-formeln/blob/main/faviconWeinFormeln.png?raw=true" alt="A wine bottle with a math formular" style="width: 40px; padding-top: 10px;"></li>
@@ -43,10 +46,34 @@ document.addEventListener("DOMContentLoaded", () => {
             </li>
         </ul>`;
 
-    document.querySelectorAll('.input_span').forEach((inputSpan) => {   // A kind of class to add attributes to the span
-        inputSpan.setAttribute('inputmode', 'decimal');
-        inputSpan.setAttribute('contenteditable', 'true');
+    // INJECT ATTRIBUTES INTO HTML SPANES
+    document.querySelectorAll('.input_span').forEach((inputSpan) => {   // Finds all spans and allows them to be editable
+        inputSpan.setAttribute('inputmode', 'decimal'); // Injects the attribute
+        inputSpan.setAttribute('contenteditable', 'true'); // Also injects the attribute
     })
+
+    // TURN DROPDOWN INTO A TOGGLE
+    let dropdowns = document.querySelectorAll('.navigation_bar_dropdown'); // Selects all dropdowns and puts them into a var
+    dropdowns.forEach(dropdown => { // Loops through each dropdown
+        dropdown.addEventListener('click', function(event) { // Triggers function when dropdown is clicked
+            let content = this.querySelector('.navigation_bar_dropdown_content'); // Finds the specific dropdown menu and puts it into a var
+            event.preventDefault(); // Prevents the link from refreshing the page
+            content.classList.toggle('show_dropdown'); // Toggles the CSS class that makes the menu visible
+            dropdown.forEach(dropdown => { // Loops through all dropdowns
+                if (other !== dropdown) { // Every dropdown that isn't the one we just clicked
+                    other.querySelector('.navigation_bar_dropdown_content').classList.remove('show_dropdown'); // Hide the others (Not selected Dropdowns)
+                }
+            })
+        })
+    })
+    window.addEventListener('click', (event) => { // Triggers when anything is clicked
+        if (!event.target.closest('.navigation_bar_dropdown')) { // Check if the click was (not) on a dropdown element
+            document.querySelectorAll('.navigation_bar_dropdown_content').forEach(menu => { // Loop through all dropdowns
+                menu.classList.remove('show_dropdown'); // Close them
+            })
+        }
+    })
+
 })
 
 function setTheme(theme) {

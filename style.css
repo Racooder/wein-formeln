@@ -100,9 +100,8 @@ body {
     justify-content: flex-start;
 }
 .navigation_bar_dropdown:hover .navigation_bar_dropdown_content {
-    display: block;
+    display: block !important;
 }
-
 .navigation_bar_dropdown_content_right {
     right: 0;
     left : auto;
