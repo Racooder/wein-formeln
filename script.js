@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => { // This code i executed, w
                 </ul>
             </li>
             <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/mail.png" alt="Envelope Icone">Kontakte</a></li>
-            <li class="navigation_bar_right navigation_bar_dropdown"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/menu.png" alt="Menu Icone"></a>
+            <li class="navigation_bar_right navigation_bar_dropdown"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/paintbrush.png" alt="Paintbrush Icone"></a>
                 <ul class="navigation_bar_dropdown_content_right navigation_bar_dropdown_content">
                     <li><a href="javascript:void(0)" onclick="setTheme('light')">Light Theme</a></li>
                     <li><a href="javascript:void(0)" onclick="setTheme('dark')">Dark Theme</a></li>
