@@ -217,20 +217,6 @@ flex: 0 0 10%;
     .left, .right {
         display: none;
     }
-    .navigation_bar_ul {
-        position: absolute;
-        width: 95%;
-    }
-    .navigation_bar_break {
-        display: block;
-    }
-    .navigation_bar_dropdown_content {
-        min-width: 100px;
-    }
-    /*.navigation_bar_left a {
-        padding: 10px 8px;
-        font-size: 16px;
-    }*/ /*Makes NavBar on phone smaller*/
     .card_view {
         width: 100%;
         overflow: hidden;
@@ -265,6 +251,17 @@ flex: 0 0 10%;
     }
     .monospace {
         font-size: 13px;
+    }
+/* ---------------------------------- Navigation Bar */
+    .navigation_bar_ul {
+        position: absolute;
+        width: 95%;
+    }
+    .navigation_bar_break {
+        display: block;
+    }
+    .navigation_bar_dropdown_content {
+        min-width: 100px;
     }
     .show_on_phone {
         display: block;
