@@ -213,10 +213,10 @@ flex: 0 0 10%;
         flex: 0 0 100%;
         padding: 15px;
         min-width: 0;
-        }
+    }
     .left, .right {
         display: none;
-        }
+    }
     .navigation_bar_ul {
         position: absolute;
         width: 95%;
