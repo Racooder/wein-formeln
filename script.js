@@ -21,14 +21,14 @@ document.addEventListener("DOMContentLoaded", () => { // This code i executed, w
 
     // NAVIGATION INJECTION
     let box = document.getElementById("navigation_bar_injection"); // Saves the div with the id in a var
-    // Tells the div to contail this code
+    // Tells the div to contain this code
     box.innerHTML = `
         <ul class="navigation_bar_ul">
             <li class="navigation_bar_left"><img src="https://github.com/simon10247/wein-formeln/blob/main/faviconWeinFormeln.png?raw=true" alt="A wine bottle with a math formular" style="width: 40px; padding-top: 10px;"></li>
             <li class="navigation_bar_left" style="font-weight: bold; font-size: 22px;"><a href="" style="pointer-events: none;">Wein-Formeln.de</a></li>
             <li class="navigation_bar_break"></li>
-            <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/home.png" alt="Home Icone">Home</a></li>
-            <li class="navigation_bar_left navigation_bar_dropdown">
+            <li class="navigation_bar_left hide_on_phone"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/home.png" alt="Home Icone">Home</a></li>
+            <li class="navigation_bar_left navigation_bar_dropdown hide_on_phone">
                 <a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/math.png" alt="Calculation Icone">Formeln</a>
                 <ul class="navigation_bar_dropdown_content">
                     <li><a href="">• Natürlicher Alkohol</a></li>
@@ -36,7 +36,14 @@ document.addEventListener("DOMContentLoaded", () => { // This code i executed, w
                     <li><a href="">• [Drittes Thema hier]</a></li>
                 </ul>
             </li>
-            <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/mail.png" alt="Envelope Icone">Kontakte</a></li>
+            <li class="navigation_bar_left hide_on_phone"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/mail.png" alt="Envelope Icone">Kontakte</a></li>
+            <li class="navigation_bar_left navigation_bar_dropdown show_on_phone"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/menu.png" alt="Menu Icone"></a>
+                <ul class="navigation_bar_dropdown_content">
+                    <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/home.png" alt="Home Icone">Home</a></li>
+                    <li class="navigation_bar_left navigation_bar_dropdown"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/math.png" alt="Calculation Icone">Formeln</a></li>
+                    <li class="navigation_bar_left"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/mail.png" alt="Envelope Icone">Kontakte</a></li>
+                </ul>
+            </li>
             <li class="navigation_bar_right navigation_bar_dropdown"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/paintbrush.png" alt="Paintbrush Icone"></a>
                 <ul class="navigation_bar_dropdown_content_right navigation_bar_dropdown_content">
                     <li><a href="javascript:void(0)" onclick="setTheme('light')">Light Theme</a></li>
