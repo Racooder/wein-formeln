@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => { // This code i executed, w
 
     // HEAD INJECTION
     document.head.insertAdjacentHTML('beforeend', `
-        <link rel="icon" type="image/x-icon" href="https://github.com/simon10247/wein-formeln/blob/main/faviconWeinFormeln.png?raw=true">
+        <link rel="icon" type="image/x-icon" href="faviconWeinFormeln.png">
         <meta author="simon102">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta charset="UTF-8">
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => { // This code i executed, w
     // Tells the div to contain this code
     box.innerHTML = `
         <ul class="navigation_bar_ul">
-            <li class="navigation_bar_left"><img src="https://github.com/simon10247/wein-formeln/blob/main/faviconWeinFormeln.png?raw=true" alt="A wine bottle with a math formular" style="width: 40px; padding-top: 10px;"></li>
+            <li class="navigation_bar_left"><img src="faviconWeinFormeln.png" alt="A wine bottle with a math formular" style="width: 40px; padding-top: 10px;"></li>
             <li class="navigation_bar_left" style="font-weight: bold; font-size: 22px;"><a href="" style="pointer-events: none;">Wein-Formeln.de</a></li>
             <li class="navigation_bar_break"></li>
             <li class="navigation_bar_left hide_on_phone"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/home.png" alt="Home Icone">Home</a></li>
