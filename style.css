@@ -62,10 +62,8 @@ body {
     text-decoration: none;
     height: 60px;
 }
-.navigation_bar_right a {
-    border-radius: 0 10px 10px 0;
-}
 .navigation_bar_ul a:hover {
+    border-radius: 10px;
     background-color: var(--widget_hover_color);
     transition: 0.7s;
 }
