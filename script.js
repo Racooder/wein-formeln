@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => { // This code i executed, w
     box.innerHTML = `
         <ul class="navigation_bar_ul">
             <li class="navigation_bar_left"><img src="faviconWeinFormeln.png" alt="A wine bottle with a math formular" style="width: 40px; padding-top: 10px;"></li>
-            <li class="navigation_bar_left" style="font-weight: bold; font-size: 22px;"><a href="" style="pointer-events: none;">Wein-Formeln.de</a></li>
+            <li class="navigation_bar_left navigation_bar_title"><a href="" style="pointer-events: none;">Wein-Formeln.de</a></li>
             <li class="navigation_bar_left hide_on_phone"><a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/home.png" alt="Home Icone">Home</a></li>
             <li class="navigation_bar_left navigation_bar_dropdown hide_on_phone">
                 <a href=""><img class="navigation_bar_icon" src="icons/navigation_bar/math.png" alt="Calculation Icone">Formeln</a>
