@@ -254,24 +254,8 @@ flex: 0 0 10%;
     }
 /* ---------------------------------- Navigation Bar */
     .navigation_bar_ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 95%;
-
-    }
-    .navigation_bar_left:nth-child(1), .navigation_bar_left:nth-child(2) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .navigation_bar_right, .show_on_phone {
         position: absolute;
-    }
-    .navigation_bar_right {
-        right: 10px; /* Needed? */
-        margin-left: 0;
+        width: 95%;
     }
     .navigation_bar_break {
         display: block;
@@ -281,7 +265,6 @@ flex: 0 0 10%;
     }
     .show_on_phone {
         display: block;
-        left: 10px; /* Needed? */
     }
     .hide_on_phone {
         display: none;
