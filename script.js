@@ -56,6 +56,10 @@ document.addEventListener("DOMContentLoaded", () => { // This code i executed, w
                     <li><a href="javascript:void(0)" onclick="setTheme('light')">Light Theme</a></li>
                     <li><a href="javascript:void(0)" onclick="setTheme('dark')">Dark Theme</a></li>
                     <li><a href="javascript:void(0)" onclick="setTheme('purple')">Purple Theme</a></li>
+                    <li class="navigation_bar_dropdown_devider"></li>
+                    <li><a href="javascript:void(0)" onclick="setAccent('vibrant')">Vibrant Accent</a></li>
+                    <li><a href="javascript:void(0)" onclick="setAccent('soft')">Soft Accent</a></li>
+                    <li><a href="javascript:void(0)" onclick="setAccent('gray')">Gray Accent</a></li>
                 </ul>
             </li>
         </ul>`;

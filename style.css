@@ -107,8 +107,14 @@ body {
     right: 0;
     left : auto;
 }
+.navigation_bar_dropdown_devider {
+    height: 3px;
+    margin: 8px 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    list-style: none;
+}
 
-/* ---------------------------------------------------------------- Background Divs + Card*/
+/* ---------------------------------------------------------------- Background Divs + Card */
 
 * {
 box-sizing: border-box;
