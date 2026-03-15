@@ -80,6 +80,18 @@ document.addEventListener("DOMContentLoaded", () => { // This code i executed, w
         }
     })
 
+    // CALCULATE NATURAL ALKOHOL WHEN ENTER IS PRESSED IN INPUTS
+    let input = document.querySelectorAll('.input_span'); // Selects all inputs and puts them into a var
+    input.forEach((input) => { // Loops through all inputs
+        input.addEventListener('keydown', (event) => { // Triggers when enter is pressed
+            if (event.key === 'Enter') { // If enter is pressed
+                event.preventDefault(); // Prevents the enter key from making a line break
+                calculateNaturalAlkohol(); // Calculate the natural alkohol
+                input.blur(); // Remove focus from the input
+            }
+        });
+    });
+
 })
 
 function setTheme(theme) {
