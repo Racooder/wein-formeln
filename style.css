@@ -168,6 +168,9 @@ flex: 0 0 10%;
 .button:hover {
     background-color: var(--widget_color_2);
 }
+.hidden_text {
+    display: none;
+}
 .input {
     background-color: var(--widget_color_2);
     border-radius: 5px;
@@ -249,6 +252,9 @@ flex: 0 0 10%;
     }
     .monospace {
         font-size: 13px;
+    }
+    .hidden_text {
+        display: none;
     }
 /* ---------------------------------- Navigation Bar */
     .navigation_bar_ul {

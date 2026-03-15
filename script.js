@@ -1,6 +1,11 @@
-// Make the Lösungsweg box for vertical scroll on phone go away if the button hasn't been pressed yet
-function show_formula() { // Normal function (Called by HTML code)
-    document.getElementsByClassName("hidden_formula")[0].style.display = "block"; //Findes an element with this class and applys the style change
+function show_text(text_class) { // Normal function (Called by HTML code)
+    let element = document.getElementsByClassName(text_class)[0]; // Saves the element with the class in a var
+    if (element.style.display === "none" || element.style.display === "") { // If the element is hidden
+        element.style.display = "block"; // Show the element
+    }
+    else { // If the element is visible
+        element.style.display = "none"; // Hide the element
+    }
 }
 
 document.addEventListener("DOMContentLoaded", () => { // This code i executed, when the html page is finished loading
