@@ -90,6 +90,14 @@ document.addEventListener("DOMContentLoaded", () => { // This code i executed, w
                 input.blur(); // Remove focus from the input
             }
         });
+        // HIGHLIGHT THE INPUTS WHEN THEY ARE FOCUSED
+        input.addEventListener('focus', () => { // Triggers when an input is focused (clicked on)
+        let range = document.createRange(); // Creates a range (To manage a selection of text?)
+        range.selectNodeContents(input); // Sets the range to include everthing inside the input
+        let selection = window.getSelection(); // Tells the var to be the browser selection tool
+        selection.removeAllRanges(); // Clears all current selections
+        selection.addRange(range); // Uses the browser selection tool previously set to be the "selection" var on the range
+        });
     });
 
 })
