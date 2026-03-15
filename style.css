@@ -256,6 +256,10 @@ flex: 0 0 10%;
     .hidden_text {
         display: none;
     }
+    .button {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
 /* ---------------------------------- Navigation Bar */
     .navigation_bar_ul {
         position: absolute;
@@ -274,7 +278,7 @@ flex: 0 0 10%;
         font-size: 20px;
     }
     .navigation_bar_icon {
-        width: 15px;
+        width: 19px;
     }
     .navigation_bar_left a, .navigation_bar_right a {
         padding: 0px 8px;
