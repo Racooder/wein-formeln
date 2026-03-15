@@ -1,10 +1,13 @@
-function show_text(text_class) { // Normal function (Called by HTML code)
+function show_text(text_class, button_class) { // Normal function (Called by HTML code)
     let element = document.getElementsByClassName(text_class)[0]; // Saves the element with the class in a var
+    let button = document.getElementsByClassName(button_class)[0]; // Saves the button with the class in a var
     if (element.style.display === "none" || element.style.display === "") { // If the element is hidden
         element.style.display = "block"; // Show the element
+        button.style["background-color"] = "var(--widget_color_2)";
     }
     else { // If the element is visible
         element.style.display = "none"; // Hide the element
+        button.style["background-color"] = "var(--widget_color)";
     }
 }
 
