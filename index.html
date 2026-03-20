@@ -19,23 +19,23 @@
     <div class="main">
         <h1 class="title">Natürlicher Alkohol</h1> <!-- Title -->
 
-        <div class="card_view" style="--stripe_color: gold;"> <!-- Description -->
+        <div class="card_view" id="description_card"> <!-- Description -->
             <h3 class="description">Der natürlicher Alkohol ist der Alkohol der bei der Gärung aus dem natürlich in der Traube vorhanden Zucker entsteht.<br>Er lässt sich aus den Öchsle unter dem abzug des Extraktes berechnen.</h3>
         </div>
 
-        <div class="card_view" style="--stripe_color: Crimson;"> <!-- Formula -->
+        <div class="card_view" id="formula_card"> <!-- Formula -->
             <h2>• Formel:</h2>
             <p class="formula">°Oe * 1,25 - E * 0,5 = nA</p>
             <pre class="horizontal_scroll monospace" style="margin-top: 20px;"><span class="keyword">°Oe</span> = <span class="keyword">Öchsle</span> in °Oe<br><span class="keyword">E</span>   = <span class="keyword">Extrakt</span> in g/l<br><span class="keyword">nA</span>  = <span class="keyword">natürlicher Alkohol</span><a href="" title="Für %vol: Geteilt durch 7,89 rechnen." class="info">ⓘ</a> in g/l</pre>
         </div>
 
-        <div class="card_view" style="--stripe_color: LimeGreen;"> <!-- Calculator -->
+        <div class="card_view" id="calculator_card"> <!-- Calculator -->
             <h2>• Rechner:</h2>
             <p class="horizontal_scroll"><span class="input input_span" id="oechsle"></span> °Oe * 1,25 - <span class="input input_span" id="extract"></span> g/l * 0,5 = <span class="input" id="natural_alkohol">&nbsp;</span> g/l</p>
             <button class="button" onclick="calculateNaturalAlkohol()">Berechnen</button>
         </div>
 
-        <div class="card_view" style="--stripe_color: dodgerblue;"> <!-- Example Task -->
+        <div class="card_view" id="example_task_card"> <!-- Example Task -->
             <h2>• Beispiel Aufgabe:</h2>
             <p class="example_task">Du untersuchst deinen Riesling Most, dieser hat 82°&nbsp;Öchsle und eine Extrakt von 21&nbsp;g/l. Du möchtest eine Alkohol von mindestens 12,5&nbsp;%vol. haben.<br>Wie hoch ist der natürliche Alkohol in g/l und musst du deinen Most noch anreichern?</p>
             <button class="button button_awnser" onclick="show_text('hidden_awnser', 'button_awnser')">Lösung Anzeigen</button>

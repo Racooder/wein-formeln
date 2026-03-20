@@ -9,6 +9,11 @@
     --card_color: #0f0920;                      /* Card Background */
     --title_color: #ffffff;                     /* Title Color */
     --text_color: #ffffff;                      /* Text Color */
+
+    --accent_card_color: Gold;
+    --accent_card_color_2: Crimson;
+    --accent_card_color_3: LimeGreen;
+    --accent_card_color_4: DodgerBlue;
 }
 
 body {
@@ -142,6 +147,19 @@ flex: 0 0 10%;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#description_card {
+    --stripe_color: var(--accent_card_color);
+}
+#formula_card {
+    --stripe_color: var(--accent_card_color_2);
+}
+#calculator_card {
+    --stripe_color: var(--accent_card_color_3);
+}
+#example_task_card {
+    --stripe_color: var(--accent_card_color_4);
 }
 
 /* ---------------------------------------------------------------- General Stuff */
