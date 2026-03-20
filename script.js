@@ -203,4 +203,4 @@ function calculateNaturalAlkohol() {
     // console.log("E:", extract);
     // console.log("nA:", naturalAlkohol);
 
-}
+} // NOTE FOR PUSH AND ROLLBACK
