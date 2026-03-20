@@ -192,6 +192,9 @@ flex: 0 0 10%;
 .button:hover {
     background-color: var(--widget_color_2);
 }
+.button_right {
+    float: right;
+}
 .hidden_text {
     display: none;
 }

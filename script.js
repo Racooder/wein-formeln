@@ -118,6 +118,9 @@ document.addEventListener("DOMContentLoaded", () => { // This code i executed, w
         });
     });
 
+    // Generate random values for natural alkohol example task
+    random_values()
+
 })
 
 function setTheme(theme) {
@@ -203,4 +206,11 @@ function calculateNaturalAlkohol() {
     // console.log("E:", extract);
     // console.log("nA:", naturalAlkohol);
 
-} // NOTE FOR PUSH AND ROLLBACK
+}
+
+function random_values() {
+
+    let random_oechsle = Math.floor(Math.random() * (110 - 70 + 1) + 70); // 70 - 110 °Oe
+
+    document.getElementById('random_value_oechsle').innerText = random_oechsle;
+}

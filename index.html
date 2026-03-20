@@ -36,9 +36,10 @@
 
         <div class="card_view" id="example_task_card"> <!-- Example Task -->
             <h2>• Beispiel Aufgabe:</h2>
-            <p class="example_task">Du untersuchst deinen Riesling Most, dieser hat 82°&nbsp;Öchsle und eine Extrakt von 21&nbsp;g/l. Du möchtest eine Alkohol von mindestens 12,5&nbsp;%vol. haben.<br>Wie hoch ist der natürliche Alkohol in g/l und musst du deinen Most noch anreichern?</p>
+            <p class="example_task">Du untersuchst deinen Riesling Most, dieser hat <span id="random_value_oechsle"></span>°&nbsp;Öchsle und eine Extrakt von 21&nbsp;g/l. Du möchtest eine Alkohol von mindestens 12,5&nbsp;%vol. haben.<br>Wie hoch ist der natürliche Alkohol in g/l und musst du deinen Most noch anreichern?</p>
             <button class="button button_awnser" onclick="show_text('hidden_awnser', 'button_awnser')">Lösung Anzeigen</button>
             <button class="button button_formula" onclick="show_text('hidden_formula', 'button_formula')">Lösungsweg Anzeigen</button>
+            <button class="button button_right" onclick="random_values()">Neue Aufgabe</button>
             <p class="hidden_awnser hidden_text">Dein Riesling Most hat einen natürlichen Alkohol von <b>92&nbsp;g/l</b>, dass sind 11,66&nbsp;%vol. und <b>muss somit noch angereichert werden</b>, um auf mindestens 12,5&nbsp;%vol. zu kommen.</p>
             <pre class="hidden_formula hidden_text horizontal_scroll monospace" style="padding-bottom: 10px;">82° Oe * 1,25 - 21 g/l * 0,5  = <b>92 g/l</b><br>92 g/l / 7,89                 = 11,66 %vol.<br>11,66 %vol. < 12,5 %vol.      = <b>Muss angereichert werden</b></pre>
         </div>
