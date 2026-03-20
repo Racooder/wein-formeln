@@ -19,6 +19,12 @@ document.addEventListener("DOMContentLoaded", () => { // This code i executed, w
         setTheme(savedTheme); // Calles the setTheme function with the found/saved theme
     }
 
+    // ACCENT STORAGE
+    let savedAccent = localStorage.getItem('selectedAccent'); // Look into browser storage and saves "selectedAccent" into var
+    if (savedAccent) { // If a saved theme exists
+        setAccent(savedAccent); // Calles the setAccent function with the found/saved accent
+    }
+
     // HEAD INJECTION
     document.head.insertAdjacentHTML('beforeend', `
         <link rel="icon" type="image/x-icon" href="faviconWeinFormeln.png">
@@ -145,6 +151,28 @@ function setTheme(theme) {
         root.style.setProperty('--card_color', '#0f0920');
         root.style.setProperty('--title_color', '#0000ffffff00');
         root.style.setProperty('--text_color', '#ffffff');
+    }
+}
+
+function setAccent(accent) {
+    let root = document.documentElement;
+    localStorage.setItem('selectedAccent', accent);
+
+    if (accent === "vibrant") {
+        root.style.setProperty('--accent_card_color', 'yellow');
+        root.style.setProperty('--accent_card_color_2', 'red');
+        root.style.setProperty('--accent_card_color_3', 'green');
+        root.style.setProperty('--accent_card_color_4', 'blue');
+    } else if (accent === "soft") {
+        root.style.setProperty('--accent_card_color', 'gold');
+        root.style.setProperty('--accent_card_color_2', 'crimson');
+        root.style.setProperty('--accent_card_color_3', 'limegreen');
+        root.style.setProperty('--accent_card_color_4', 'dogerblue');
+    } else if (accent === "gray") {
+        root.style.setProperty('--accent_card_color', '#ffffff');
+        root.style.setProperty('--accent_card_color_2', '#b4b4b4');
+        root.style.setProperty('--accent_card_color_3', '#505050');
+        root.style.setProperty('--accent_card_color_4', '#000000');
     }
 }
 
