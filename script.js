@@ -11,7 +11,7 @@ function show_text(text_class, button_class) { // Normal function (Called by HTM
     }
 }
 
-document.addEventListener("DOMContentLoaded", () => { // This code i executed, when the html page is finished loading
+document.addEventListener("DOMContentLoaded", () => { // This code is executed, when the html page is finished loading
 
     // THEME STORAGE
     let savedTheme = localStorage.getItem('selectedTheme'); // Look into browser storage and saves "selectedTheme" into var
