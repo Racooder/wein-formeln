@@ -98,13 +98,13 @@ document.addEventListener("DOMContentLoaded", () => { // This code is executed, 
         }
     })
 
-    // CALCULATE NATURAL ALKOHOL WHEN ENTER IS PRESSED IN INPUTS
+    // CALCULATE WHEN ENTER IS PRESSED IN INPUTS
     let input = document.querySelectorAll('.input_span'); // Selects all inputs and puts them into a var
     input.forEach((input) => { // Loops through all inputs
         input.addEventListener('keydown', (event) => { // Triggers when enter is pressed
             if (event.key === 'Enter') { // If enter is pressed
                 event.preventDefault(); // Prevents the enter key from making a line break
-                calculateNaturalAlkohol(); // Calculate the natural alkohol
+                calculation(); // Call calculate function
                 input.blur(); // Remove focus from the input
             }
         });
@@ -181,26 +181,4 @@ function commaToDot(text) {
     text = text.replace(",", ".");
     text = Number(text);
     return text;
-}
-
-// Calculate the natural alkohol
-function calculateNaturalAlkohol() {
-    
-    let oechsle = document.getElementById('oechsle').innerText;
-    let extract = document.getElementById('extract').innerText;
-    let naturalAlkohol;
-
-    oechsle = commaToDot(oechsle);
-    extract = commaToDot(extract);
-
-    naturalAlkohol = oechsle * 1.25 - extract * 0.5;
-
-    naturalAlkohol = String(naturalAlkohol).replace(".", ",");
-
-    document.getElementById('natural_alkohol').innerText = naturalAlkohol;
-
-    // console.log("Oe:", oechsle);
-    // console.log("E:", extract);
-    // console.log("nA:", naturalAlkohol);
-
 }
