@@ -8,12 +8,7 @@ function calculation() {
 
     naturalAlkohol = oechsle * 1.25 - extract * 0.5;
 
-    let naturalAlkoholText;
-    if (isNaN(naturalAlkohol)) {
-        naturalAlkoholText = "Womp Womp";
-    } else {
-        naturalAlkoholText = String(naturalAlkohol).replace(".", ",");
-    }
+    let naturalAlkoholText = String(naturalAlkohol).replace(".", ",");
 
     document.getElementById('natural_alkohol').innerText = naturalAlkoholText;
 }
