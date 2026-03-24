@@ -217,7 +217,7 @@ flex: 0 0 10%;
 }
 .input_span { 
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
     min-width: 1ch;
 }
 /* Fix ends here */
