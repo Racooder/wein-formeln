@@ -3,6 +3,7 @@ function calculation() {
     let extract = document.getElementById('extract').innerText;
     let naturalAlkohol;
 
+    let useComma = containsComma(oechsle) || containsComma(extract);
     oechsle = commaToDot(oechsle);
     extract = commaToDot(extract);
 
@@ -12,7 +13,10 @@ function calculation() {
     if (isNaN(naturalAlkohol)) {
         naturalAlkoholText = "Womp Womp";
     } else {
-        naturalAlkoholText = String(naturalAlkohol).replace(".", ",");
+        naturalAlkoholText = String(naturalAlkohol);
+        if (useComma) {
+            naturalAlkoholText = naturalAlkoholText.replace(".", ",");
+        }
     }
 
     document.getElementById('natural_alkohol').innerText = naturalAlkoholText;

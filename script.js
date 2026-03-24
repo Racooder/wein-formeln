@@ -176,6 +176,11 @@ function setAccent(accent) {
     }
 }
 
+function containsComma(text) {
+    text = String(text);
+    return text.includes(",");
+}
+
 function commaToDot(text) {
     text = String(text);
     text = text.replace(",", ".");
